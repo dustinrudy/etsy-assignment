@@ -14,17 +14,19 @@ header {
 	padding-left: 25px;
 	display: flex;
 	justify-content: flex-start;
+	border-bottom: 1px solid #EEEEEE;
 
 }
 
 input {
   height: 34px;
-  width: 100%;
+  width: 80%;
   border-radius: 3px;
   border: 1px solid transparent;
   border-top: none;
   border-bottom: 1px solid #DDD;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  float: left;
 }
 
 #logo {
@@ -36,9 +38,9 @@ input {
 	padding-top: 10px;
 }
 
-#search {
+#searchwrap {
 	float: left;
-	width: 342px;
+	width: 404px;
 	height: 34px;
 	border-radius: 5px;
 	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
@@ -50,27 +52,71 @@ button {
 	border-radius: 3px;
     border-style: solid;
     border-width: 1px;
+    border-color: #CFCBC8;
     display: inline-block;
-    font-family: inherit;
+    font-family: "Graphik Web","Arial","Helvetica",sans-serif;
     font-size: 14px;
     font-weight: bold;
-    height: 38px;
+    height: 35px;
     line-height: 1.4;
     padding: 8px 12px;
     text-align: center;
     text-decoration: none;
-    background: #34A8C4
+    background: #34A8C4;
+    float: left;
+    color: white;
+    margin-left: -5px;
   
 }
 
-.column:first-child {
-  height:100px;
-  width:300px;
-  background:blue;
-  float:left
+.top_header {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	justify-content: space-between;
+	color: #0192B5;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	padding-left: 0px;
+	margin-top: 0px;
+	font-size: 14px;
 }
 
-.column:last-child {
-  height:100px;
-  background:red;
+.top_header li {
+	margin-right: 20px; 
+	padding: 8px 8px;
+
+}
+
+.top_header li:nth-child(3) {
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #0192B5; 
+}
+
+.top_header li:nth-child(4) {
+	border-left-color: 1px solid #EEEEEE;
+	color: #888;
+	font-size: 12px;
+}
+
+nav {
+	float: left;
+	height: 100%;
+	width: auto;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 14px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding-left: 0px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	color: #888888;
+}
+
+.navbar > li {
+	padding-right: 15px;
+	padding-left: 20px;
 }
