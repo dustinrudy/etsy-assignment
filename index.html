@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Etsy Search Results</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8">
 </head>
@@ -12,7 +13,7 @@
 	<div id="searchwrap">
 			<form>
 			<label name="search">
-			<input type="search" name="search" id="search">
+			<input class="search" type="search" name="search" id="search">
 			</label>
 			<button>Search</button>
 		</form>
@@ -36,8 +37,115 @@
 		<li>Vintage</li>
 	</ul>
 </nav>
+<div class ="body">
+	<div class="column_search">
+		<h5>Show results for:</h5>
+		<div class="panel">
+			<span class="head">All categories</span>
+			<ul class ="categories">
+				<li>Home & Living</li>
+				<li>Art & Collectibles</li>
+				<li>Weddings</li>
+				<li>Clothing</li>
+				<li>Paper & Party Supplies</li>
+				<li>Accessories</li>
+				<li>Jewelry</li>
+				<li>Craft Supplies & Tools</li>
+				<li>Bags & Purses</li>
+				<li>Bath & Beauty</li>
+				<li>Shoes</li>
+				<li>Books, Movies & Music</li>
+				<li>Electronics & Accessories</li>
+				<li>Toys & Games</li>
+				<li>Pet Supplies</li>
+			</ul>
+		</div>
+		<h5>Refine your search</h5>
+		<div class="panel_reset">
+		<form>
+			<div id="container">
+				<div class="section">
+					<p class="head">Shop location</p>
+					<ul class="refine">
+						<li>
+							<label name="anywhere">
+							<input class="refine" type="radio" name="Anywhere" id="anywhere">Anywhere
+							</label>
+						</li>
+						<li>
+							<label name="us">
+							<input class="refine" type="radio" name="United States" id="us">United States
+							</label>
+						</li>
+						<li>Choose a custom location</li>
+					</ul>
+				</div>
+				<div class="section">
+					<p class="head">Item type</p>
+					<ul class="refine">
+						<li>
+							<label name="all">
+							<input class="refine" type="radio" name="allitmes" id="all">All items
+							</label>
+						</li>
+						<li>
+							<label name="handmade">
+							<input class="refine" type="radio" name="handmade" id="handmade">Handmade
+							</label>
+						</li>
+						<li>
+							<label name="vintage">
+							<input class="refine" type="radio" name="vintage" id="vintage">Vintage
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="section">
+					<p class="head">Price ($)</p>
+					<ul class="refine">
+						<li>
+							<label name="anyprice">
+							<input class="refine" type="radio" name="anyprice" id="anyprice">Any price
+							</label>
+						</li>
+						<li>
+							<label name="under_25">
+							<input class="refine" type="radio" name="under_25" id="under_25">Under $25
+							</label>
+						</li>
+						<li>
+							<label name="25_50">
+							<input class="refine" type="radio" name="25_50" id="25_50">$25 to $50
+							</label>
+						</li>
+						<li>
+							<label name="50_100">
+							<input class="refine" type="radio" name="50_100" id="50_100">$50 to $100
+							</label>
+						</li>
+						<li>
+							<label name="over_100">
+							<input class="refine" type="radio" name="over_100" id="over_100">Over $100
+							</label>
+						</li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="section">
+					<p class="head">Filter by color</p>
+				</div>
+				<div class="section">
+					<p class="head">Ordering options</p>
+				</div>
+				<div class="section">
+					<p class="head">Ship to</p>
+				</div>
+			</div>
+		</form>
+		</div>
+</div>
 
-<script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous">
 	
 </script>  
 <script type="text/javascript" src="main.js">
