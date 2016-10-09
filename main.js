@@ -12,7 +12,7 @@ function putInDom(data) {
    var ourData = data.results.map(function(item){
        return {
            price: item.price,
-           link: item.url,
+           shop_name: item.shop_name,
            title: item.title,
            img: item.Images[0].url_570xN
        }
@@ -24,7 +24,7 @@ function putInDom(data) {
        <div class="pics">
            <img src="${item.img}" />
            <p id="name"> ${item.title} </p>
-           <p id="url"> ${item.url} </p>
+           <p id="shop_name"> ${item.shop_name} </p>
            <p id="price"> ${item.price} </p>
            
        </div>
