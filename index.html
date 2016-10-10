@@ -6,24 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8">
 </head>
-<body>
+<body class="body">
 <div id="wrap">
 	<header>
-		<div id = "logo">
-		</div>
-		<div id="searchwrap">
-			<form>
-				<label name="search">
-				<input class="search" type="search" name="search" id="search">
-				</label>
-				<button>Search</button>
-			</form>
+		<div class="headerleft">
+			<div id = "logo">
+			</div>
+			<div id="searchwrap">
+				<form>
+					<label name="search">
+					<input class="search" type="search" name="search" id="search">
+					</label>
+					<button>Search</button>
+				</form>
+			</div>
 		</div>
 		<ul class="top_header">
-			<li>Sell on Etsy</li>
-			<li>Register</li>
-			<li>Sign in</li>
-			<li><img src="../images/cart.png">Cart</li>
+			<li class="sell">Sell on Etsy</li>
+			<li class="sell">Register</li>
+			<li id="sign__in">Sign in</li>
+			<div id="__cart"><img src="images/cart.png"><span style="clear: both;">Cart</span></div>
 		</ul>
 	</header>
 	<nav>
@@ -69,13 +71,13 @@
 					<p class="head">Shop location</p>
 					<ul class="refine">
 						<li>
-							<label name="anywhere">
-							<input class="refine" type="radio" name="Anywhere" id="anywhere">Anywhere
+							<input class="refine" type="radio" name="Anywhere" id="anywhere">
+							<label name="anywhere">Anywhere
 							</label>
 						</li>
 						<li>
-							<label name="us">
-							<input class="refine" type="radio" name="United States" id="us">United States
+							<input class="refine" type="radio" name="United States" id="us">
+							<label name="us">United States
 							</label>
 						</li>
 						<li>Choose a custom location</li>
@@ -85,18 +87,18 @@
 					<p class="head">Item type</p>
 					<ul class="refine">
 						<li>
-							<label name="all">
-							<input class="refine" type="radio" name="allitmes" id="all"><span>All items</span>
+							<input class="refine" type="radio" name="allitmes" id="all">
+							<label name="all">All items
 							</label>
 						</li>
 						<li>
-							<label name="handmade">
-							<input class="refine" type="radio" name="handmade" id="handmade"><span>Handmade</span>
+							<input class="refine" type="radio" name="handmade" id="handmade">
+							<label name="handmade">Handmade
 							</label>
 						</li>
 						<li>
-							<label name="vintage">
-							<input class="refine" type="radio" name="vintage" id="vintage"><span>Vintage</span>
+							<input class="refine" type="radio" name="vintage" id="vintage">
+							<label name="vintage">Vintage
 							</label>
 						</li>
 					</ul>
@@ -105,28 +107,31 @@
 					<p class="head">Price ($)</p>
 					<ul class="refine">
 						<li>
-							<label name="anyprice">
-							<input class="refine" type="radio" name="anyprice" id="anyprice">Any price
+							<input class="refine" type="radio" name="anyprice" id="anyprice">
+							<label name="anyprice">Any price
 							</label>
 						</li>
 						<li>
-							<label name="under_25">
-							<input class="refine" type="radio" name="under_25" id="under_25">Under $25
+							<input class="refine" type="radio" name="under_25" id="under_25">
+							<label name="under_25">Under $25
 							</label>
 						</li>
 						<li>
-							<label name="25_50">
-							<input class="refine" type="radio" name="25_50" id="25_50">$25 to $50
+							
+							<input class="refine" type="radio" name="25_50" id="25_50">
+							<label name="25_50">$25 to $50
 							</label>
 						</li>
 						<li>
-							<label name="50_100">
-							<input class="refine" type="radio" name="50_100" id="50_100">$50 to $100
+							
+							<input class="refine" type="radio" name="50_100" id="50_100">
+							<label name="50_100">$50 to $100
 							</label>
 						</li>
 						<li>
-							<label name="over_100">
-							<input class="refine" type="radio" name="over_100" id="over_100">Over $100
+							
+							<input class="refine" type="radio" name="over_100" id="over_100">
+							<label name="over_100">Over $100
 							</label>
 						</li>
 						<li></li>
@@ -148,8 +153,12 @@
 				<div class="section">
 					<p class="head">Ordering options</p>
 					<ul class="refine">
-						<li><input type="checkbox" name="accepts_giftcard" value="accepts_giftcard">Accepts Etsy gift cards</li>
-						<li><input type="checkbox" name="custom" value="Customizable">Customizable</li>
+						<li><input type="checkbox" name="accepts_giftcard" value="accepts_giftcard">
+						<label name="accepts_giftcard">Accepts Etsy gift cards</label>
+						</li>
+						<li><input type="checkbox" name="custom" value="Customizable">
+						<label name="custom">Customizable</label>
+						</li>
 					</ul>
 				</div>
 				<div class="section">

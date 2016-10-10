@@ -12,9 +12,10 @@ function putInDom(data) {
    var ourData = data.results.map(function(item){
        return {
            price: item.price,
-           shop_name: item.shop_name,
+           shop_name: item.Shop.shop_name,
            title: truncate(item.title),
-           img: item.Images[0].url_570xN
+           img: item.Images[0].url_570xN,
+           link: item.url
        }
     console.log(ourData)
    })
@@ -22,13 +23,14 @@ function putInDom(data) {
    var htmlStr = "";
    ourData.forEach(function(item){
        htmlStr += `
-       <div class="pics">
-           <img src="${item.img}" />
+       <a href="${item.link}"><div class="pics">
+           <img src="${item.img}" title="${item.title}" />
            <p id="name"> ${item.title} </p>
            <p id="shop_name"> ${item.shop_name} </p>
            <p id="price">$${item.price} </p>
            
        </div>
+       </a>
        `
    })
 
@@ -40,7 +42,7 @@ function putInDom(data) {
 
 
 function truncate(item){
-	var truncatedText = item.substring(0, 25) + '...';
+	var truncatedText = item.substring(0, 30) + '...';
 	return truncatedText
 
 }
