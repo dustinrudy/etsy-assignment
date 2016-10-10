@@ -148,13 +148,30 @@ button {
 
 #__cart {
 	border-left-color: 1px solid #EEEEEE;
-	color: #888;
+	opacity: 0.5;
+	color: #000000;
 	font-size: 12px;
 	display: inline-block;
+	text-align: center;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
 }
+
+#__cart:hover {
+	border-left-color: 1px solid #EEEEEE;
+	opacity: 1;
+	color: #000000;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+}
+
+
 
 #__cart > img {
 	display: inherit;
+	opacity: 0.5;
+	margin-right: 5px;
 }
 
 nav {
