@@ -26,7 +26,7 @@ function putInDom(data) {
            <img src="${item.img}" />
            <p id="name"> ${item.title} </p>
            <p id="shop_name"> ${item.shop_name} </p>
-           <p id="price"> ${item.price} </p>
+           <p id="price">$${item.price} </p>
            
        </div>
        `
