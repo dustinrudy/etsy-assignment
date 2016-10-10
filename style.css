@@ -275,9 +275,7 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 20px 20px;
-	max-width: 224px;
-    max-height: 225px;
+	padding: 87px 70px;
 }
 
 .pics {
@@ -285,8 +283,9 @@ h5 {
 	border-radius: 3px;
 	height: 300px;
 	background-color: white;
-	width: 224px;
+	width: 195px;
     height: 257px;
+    margin-bottom: 15px;
 
 }
 
@@ -317,7 +316,7 @@ h5 {
 }
 
 .pics > img {
-	width: 195px;
+	width: 193px;
     height: 195px;
 
 }

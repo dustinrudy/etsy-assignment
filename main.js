@@ -40,7 +40,7 @@ function putInDom(data) {
 
 
 function truncate(item){
-	var truncatedText = item.substring(0, 30) + '...';
+	var truncatedText = item.substring(0, 25) + '...';
 	return truncatedText
 
 }
