@@ -274,9 +274,10 @@ h5 {
 #allpics {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 20px 20px;
-	max-width: 222px;
-    max-height: 222px;
+	max-width: 224px;
+    max-height: 225px;
 }
 
 .pics {
@@ -284,16 +285,20 @@ h5 {
 	border-radius: 3px;
 	height: 300px;
 	background-color: white;
+	width: 224px;
+    height: 257px;
 
 }
 
 #name {
 	clear: both;
 	color: #444;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
-	text-overflow: ellipsis;
-	word-wrap: normal;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    padding-left: 10px;
 }
 
 #price{
@@ -305,14 +310,15 @@ h5 {
 
 #shop_name {
 	color: #9A9A9A;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
 	display: inline;
+	padding-left: 10px;
 }
 
 .pics > img {
-	max-width: 195px;
-    max-height: 195px;
+	width: 195px;
+    height: 195px;
 
 }
 

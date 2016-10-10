@@ -13,9 +13,10 @@ function putInDom(data) {
        return {
            price: item.price,
            shop_name: item.shop_name,
-           title: item.title,
+           title: truncate(item.title),
            img: item.Images[0].url_570xN
        }
+    console.log(ourData)
    })
 
    var htmlStr = "";
@@ -35,6 +36,16 @@ function putInDom(data) {
 
    $("#allpics").html(htmlStr)
 }
+
+
+
+function truncate(item){
+	var truncatedText = item.substring(0, 30) + '...';
+	return truncatedText
+
+}
+
+console.log(truncate)
 
 
 
