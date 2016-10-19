@@ -76,6 +76,18 @@ input.search{
 	background-color: white;
 }
 
+#searchwrap:focus {
+	float: left;
+	width: 404px;
+	height: 34px;
+	border-radius: 5px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	font-size: 14px;
+	padding-left: 15px;
+	background-color: white;
+	outline: none;
+}
+
 button {
 	border-radius: 0px 3px 3px 0px;
     border-style: solid;
@@ -112,9 +124,10 @@ button {
 
 .top_header li {
 	margin-right: 20px; 
-	padding: 8px 5px;
+	padding: 8px 8px;
 
 }
+
 
 .sell:hover{
 	margin-right: 20px; 
@@ -129,6 +142,7 @@ button {
 	padding-left: 0px;
 	margin-top: 0px;
 	font-size: 14px;
+
 }
 
 #sign__in {
@@ -333,7 +347,7 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 87px 136px;
+	padding: 87px 0px;
 }
 
 .pics {
@@ -392,4 +406,98 @@ a {
 	display: block;
     float: left;
     height: auto;
+}
+
+#container__related {
+	width: 700px;
+	height: 120px;
+}
+
+.listrelated {
+	width: 30%;
+	float: left;
+}
+
+.related_results {
+	color: #0192B5;
+	font-size: 13px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	line-height: 25px;
+	list-style: none;
+	padding-left: 10px;
+
+}
+
+.related_results > li:hover {
+	color: #0192B5;
+	font-size: 13px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	line-height: 25px;
+	list-style: none;
+	text-decoration: underline;
+
+}
+
+#shop_suggest {
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	font-size: 13px;
+	color: #444;
+	clear:both;
+	padding-left: 10px;
+}
+
+.shop__suggest__link {
+	color: #0192B5;
+	font-size: 13px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+
+}
+
+.shop__suggest__link:hover {
+	color: #0192B5;
+	font-size: 13px;
+	font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+	text-decoration: underline;
+
+}
+
+#navindex_footer {
+	width: 948px;
+	height: 38px;
+	margin-top: 18px;
+
+}
+
+.index{
+	background-color: #FFF;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #444;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 1.4;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.index:hover{
+	background-color: #FFF;
+    border-color: rgba(0, 0, 0, 1);
+    color: #444;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 1.4;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
 }
